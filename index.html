@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <script src="https://cdn.tailwindcss.com"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,30 +10,22 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
-       position: absolute;
+    position: absolute;
     left : 20px;
-top : 50px;
-}
-body{
-  width : 100%;
-}
-.ctr{
-  width : 100%;
-height : 100%;
-}
+    top : 50px;}
 </style>
     <div
-        class="h-screen bg-repeat bg-[url('https://i.pinimg.com/564x/e8/17/f9/e817f9750fdc4dd0a00d94d1554fb994.jpg')] ">
+    class="h-screen bg-repeat bg-[url('https://i.pinimg.com/564x/e8/17/f9/e817f9750fdc4dd0a00d94d1554fb994.jpg')]">
     <title>Proposal</title>
     <div class = "pt-[20%]">
     <div class = "text-slate-400 text-2xl flex justify-center items-center">
-         Will you be my girlfriend ? 
+     Will you be my girlfriend ?
     </div>
     <br>
     <div class = " text-xl text-slate-400 flex justify-center items-center">
         <a class = "pr-[3%]" href="mailto: nandagopal.nsb@gmail.com">
             <button>YES</button>
-          </a> 
+        </a> 
         <button class = "button" id ="movingbutton">NO</button>
     </div>
 </div>
@@ -42,13 +33,12 @@ height : 100%;
 </body>
 <script>
   var b = document.querySelector("#movingbutton");
-b.addEventListener("click",change);
-
-function change()
+  b.addEventListener("click",change);
+  function change()
 {
-let i = Math.floor(Math.random()*500)+1;
-let j = Math.floor(Math.random()*500)+1;
-console.log('here' , i ,j , b.style.left , b.style.top);
+    x = Math.floor(Math.random()*500)+1;
+    y  = Math.floor(Math.random()*500)+1;
+    console.log('here' , i ,j , b.style.left , b.style.top);
     b.style.left = i+'px';
     b.style.top = j + "px";
 }
